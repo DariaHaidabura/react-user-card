@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .user-grid {
   display: flex;
   flex-wrap: wrap;
@@ -43,4 +49,32 @@
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+.btn-add {
+  display: inline-block;
+  margin: 24px auto 0;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #6366f1; /* Indigo-500 */
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.btn-add:hover {
+  background-color: #4f46e5; /* Indigo-600 */
+  transform: translateY(-2px);
+}
+
+.btn-add:active {
+  transform: translateY(0);
 }
