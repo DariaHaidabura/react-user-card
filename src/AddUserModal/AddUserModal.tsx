@@ -31,6 +31,7 @@ const AddUserModal: React.FC<AddUserModalProps> = ({
     e.preventDefault();
 
     const newUser: User = {
+      id: Date.now(),
       name: nameOfUser,
       img: imageUrlOfUser,
       age: Number(ageOfUser),
